@@ -1,17 +1,5 @@
 {
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automergeType": "pr",
-    "platformAutomerge": true,
-    "automerge": true
-  },
-  "packageRules": [
-    {
-      "matchDepTypes": ["devDependencies"],
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["*"],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": true
-    }
+  "extends": [
+    "github>sarvex/renovate-configs:js-app",
   ]
 }
