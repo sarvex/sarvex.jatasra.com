@@ -44,8 +44,8 @@ devDependencies:
     specifier: 7.0.26
     version: 7.0.26(typescript@5.1.6)(vite@4.4.2)
   '@storybook/html':
-    specifier: 7.0.26
-    version: 7.0.26(@babel/core@7.22.8)
+    specifier: 7.1.1
+    version: 7.1.1(@babel/core@7.22.8)
   '@storybook/html-vite':
     specifier: 7.0.26
     version: 7.0.26(@babel/core@7.22.8)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.4.2)
@@ -155,7 +155,7 @@ packages:
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@babel/code-frame': 7.22.5
-      '@babel/generator': 7.22.7
+      '@babel/generator': 7.22.9
       '@babel/helper-compilation-targets': 7.22.6(@babel/core@7.21.8)
       '@babel/helper-module-transforms': 7.22.5
       '@babel/helpers': 7.22.6
@@ -2415,7 +2415,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.22.5
-      '@babel/generator': 7.22.7
+      '@babel/generator': 7.22.9
       '@babel/helper-environment-visitor': 7.22.5
       '@babel/helper-function-name': 7.22.5
       '@babel/helper-hoist-variables': 7.22.5
@@ -4157,6 +4157,13 @@ packages:
       '@storybook/preview-api': 7.0.26
     dev: true
 
+  /@storybook/core-client@7.1.1:
+    resolution: {integrity: sha512-yFd617XKFS+Q5IFmItXR+DdMfpreHHcdy3f67dt8PLnnjNcGMpi7gEcp8t9yBAT+pIgnqSfE/FNUFTg0OEpRpw==}
+    dependencies:
+      '@storybook/client-logger': 7.1.1
+      '@storybook/preview-api': 7.1.1
+    dev: true
+
   /@storybook/core-common@7.0.26:
     resolution: {integrity: sha512-rojZblzB0egNXX0bZ7R3TuPDiBSIhxpZCrorrDMHOZ8F+zuBxyTiZ0yMxEDn7i46T2n1vX+hUHhwZVxZrLn/ZQ==}
     dependencies:
@@ -4408,6 +4415,24 @@ packages:
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 7.0.26
       '@storybook/types': 7.0.26
+      ts-dedent: 2.2.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /@storybook/html@7.1.1(@babel/core@7.22.8):
+    resolution: {integrity: sha512-MV3QEEIKsBrSsummoN4fcf0ELdt0+zEB1m6JHH4jW1/tEEfVpcRfY5D4PvRmfA674zPmPmXnt6I4dEt8+rzJaw==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+    dependencies:
+      '@babel/core': 7.22.8
+      '@storybook/core-client': 7.1.1
+      '@storybook/docs-tools': 7.1.1
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.1.1
+      '@storybook/types': 7.1.1
       ts-dedent: 2.2.0
     transitivePeerDependencies:
       - encoding
@@ -5344,7 +5369,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.22.8
-      '@babel/generator': 7.22.7
+      '@babel/generator': 7.22.9
       '@babel/parser': 7.22.7
       '@babel/plugin-syntax-jsx': 7.22.5(@babel/core@7.22.8)
       '@babel/plugin-syntax-typescript': 7.22.5(@babel/core@7.22.8)
